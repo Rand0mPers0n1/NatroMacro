@@ -17902,6 +17902,13 @@ nm_BlackQuestProg(){
 			break
 		}
 
+		Qfound:=nm_imgSearch("black_bear5.png",50,"quest")
+		if (Qfound[1]=0) {
+			if (A_Index > 1)
+				Gdip_DisposeImage(pBMLog)
+			break
+		}
+
 		ActivateRoblox()
 		switch A_Index
 		{
